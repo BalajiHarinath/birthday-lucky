@@ -46,3 +46,8 @@ p{
     font-weight: bold;
     font-size: larger;
 }
+
+footer p{
+    padding-top: 2rem;
+    text-align: center;
+}
