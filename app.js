@@ -3,7 +3,7 @@ const luckyNumber = document.querySelector("#lucky-number");
 const outputMessage = document.querySelector("#message");
 const button = document.querySelector("#check");
 
-function calculateSum(dob){
+const calculateSum = dob => {
     dob=dob.replaceAll("-"," ");
     let sum=0;
     console.log(dob.length);
@@ -13,7 +13,7 @@ function calculateSum(dob){
     return sum;
 };
 
-function clickHandler(){
+const clickHandler = () => {
     const dob = birthday.value;
     const luckyNum = luckyNumber.value;
     if(dob && luckyNum){
